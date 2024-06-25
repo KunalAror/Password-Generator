@@ -42,3 +42,7 @@ function copy(buttonId) {
         navigator.clipboard.writeText(password2.textContent)
     }
 }
+
+function theme() {
+    document.body.classList.toggle('dark-mode');
+}

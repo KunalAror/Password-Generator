@@ -1,16 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+body{
+/* Color vairables*/
+--BGCOLOR: rgb(31, 41, 55);
+--COLORTEXT :#55f991 ;
+--PASSWORDPARA: gainsboro;
+--NORMALTEXT:white;
+}
+
+body.dark-mode {
+--BGCOLOR: gainsboro;
+--COLORTEXT :white;
+--PASSWORDPARA: rgb(31, 41, 55);
+--NORMALTEXT:#55f991 ;
+}
 
 *{
     padding: 0;
     margin: 0;
     font-family: Nunito;
-    background-color: rgb(31, 41, 55);
-    color: white;
+    background-color:var(--BGCOLOR);
+    color: var(--NORMALTEXT);
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#theme-btn{
+    font-size: 2vw;
+    width: 10vw;
+    height: 10vh;
+    /* padding: ; */
+    margin: 0 2vw 0 0 ;
+    color:var(--COLORTEXT);
+    border: solid var(--COLORTEXT) 2.5px;
+    background-color:var(--PASSWORDPARA);
+    border-radius: 5vw;
 }
 
 .topcontent{
+    /* display: flex; */
+    /* background-color: aquamarine; */
+    width: fit-content;
     margin: 1vh 0 0 2vw;
 }
+
 h1{
     display: flex;
     flex-direction: column;
@@ -27,7 +62,7 @@ h1{
 }
 
 h1 span{
-    color: #55f991;
+    color: var(--COLORTEXT);
     white-space: nowrap; 
 }
 
@@ -66,19 +101,19 @@ form{
     justify-content: space-around;
     align-items: center;
     margin:10vh 0;
-    background-color: gainsboro;
+    background-color: var(--PASSWORDPARA);
     width: 30vw;
     height: 10vh;
     border-radius: 20vmin;
     border: none;
     text-align: center;
-    color: rgb(31, 41, 55);
+    color: var(--BGCOLOR);
 }
 
 .generate{
     border: none;
     border-radius: 10vw;
-    background-color: #55f991;
+    background-color:var(--COLORTEXT);
     min-width: 20vw;
     font-size: inherit;
 }
@@ -93,7 +128,7 @@ form{
 #PassLength{
     margin-left:1vw;
     border: none;
-    background-color: #55f991;
+    background-color:var(--COLORTEXT);
     /* padding: .75vw; */
     border-radius: .5vw;
     font-size: 4vmin;
