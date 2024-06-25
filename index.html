@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" href="icon.webp">
+    <title>EasyPassword</title>
+</head>
+
+<body>
+    <div class="topcontent">
+        <h1 class="tagline">Generate a <span>Random Password</span></h1>
+        <p class="sub">Never use an insecure password again.</p>
+    </div>
+    <hr />
+    <div class="inputs">
+        <form>
+            <div class="length">
+                <label for="PassLength">Length Of Password : </label>
+                <input type="number" name="PassLength" id="PassLength" min="8" max="20" value="12" required />
+            </div>
+            <div class="specialchar">
+                <label for="Charecters">Special Charecters</label>
+                <input type="checkbox" id="Charecters" />
+            </div>
+            <button type="button" class="generate" onclick="generate()">Generate Password</button>
+        </form>
+    </div>
+    <div class="result">
+        <div class="passwordAndbtn">
+            <p class="password" id="password1">Your password
+            </p>
+            <button class="copybtn" id="copybtn1" onclick="copy('copybtn1')"><img src="copy.jpg" alt="copy" width="30px" height="30px"></button>
+        </div>
+        <div class="passwordAndbtn">
+            <p class="password" id="password2">Your password
+            </p>
+            <button class="copybtn" id="copybtn2" onclick="copy('copybtn2')"><img src="copy.jpg" alt="copy" width="30px" height="30px"></button>
+        </div>
+    </div>
+    
+</body>
+<script src="index.js"></script>
+</html>

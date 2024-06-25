@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Nunito;
+    background-color: rgb(31, 41, 55);
+    color: white;
+}
+
+h1{
+    display: flex;
+    flex-direction: column;
+    font-size: 10vmin;
+    /* height: 20vh; */
+    /* width:50vw; */
+    min-width:fit-content;
+    min-height:min-content;
+    /* background-color: aqua; */
+    /* margin:2vmin; */
+    line-height:1.2;
+    letter-spacing: 1.9;
+    
+}
+
+h1 span{
+    color: #55f991;
+    white-space: nowrap; 
+}
+
+.sub{
+    font-size: 5vmin;
+    margin:1vh 0vh 5vh 0vh ;
+}
+
+form{
+    font-size: 4vmin;
+    margin-top: 5vh;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10vw;
+}
+
+
+.result{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.passwordAndbtn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:1vw;
+}
+
+.password{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:10vh 0;
+    background-color: gainsboro;
+    width: 30vw;
+    height: 10vh;
+    border-radius: 20vmin;
+    border: none;
+    text-align: center;
+    color: rgb(31, 41, 55);
+}
+
+.generate{
+    border: none;
+    border-radius: 10vw;
+    background-color: #55f991;
+    min-width: 20vw;
+    font-size: inherit;
+}
+
+.length{
+    white-space: nowrap;
+}
+.specialChar{
+    white-space: nowrap;
+}
+
+#PassLength{
+    margin-left:1vw;
+    border: none;
+    background-color: #55f991;
+    /* padding: .75vw; */
+    border-radius: .5vw;
+    font-size: 4vmin;
+}
+
+.copybtn{
+    height: 10vh;
+    border: none;
+}
+
+.copybtn img:hover{
+    cursor:grab;
+}
+
+
+
